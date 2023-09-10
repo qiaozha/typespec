@@ -7,6 +7,7 @@ const config = defineConfig({
     target: "esnext",
     chunkSizeWarningLimit: 3000,
     rollupOptions: {
+      external: ["fs", "path"],
       output: {
         manualChunks: {
           monaco: ["monaco-editor"],
@@ -15,12 +16,14 @@ const config = defineConfig({
     },
   },
   esbuild: {
-    logOverride: { "this-is-undefined-in-esm": "silent" },
+    logOverride: { "this-is-undefined-in-esm": "info" },
   },
   assetsInclude: [/\.tsp$/],
   optimizeDeps: {
     exclude: ["swagger-ui"],
   },
+  logLevel: "info",
+  clearScreen: false,
   plugins: [
     (react as any)({
       jsxImportSource: "@emotion/react",

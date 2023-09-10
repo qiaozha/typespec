@@ -774,6 +774,12 @@ importers:
 
   ../../packages/playground:
     dependencies:
+      '@azure-tools/typespec-azure-core':
+        specifier: '>=0.33.0 <1.0.0'
+        version: 0.33.1(@typespec/compiler@..+packages+compiler)(@typespec/http@..+packages+http)(@typespec/rest@..+packages+rest)
+      '@azure-tools/typespec-client-generator-core':
+        specifier: '>=0.33.0 <1.0.0'
+        version: 0.33.0(@typespec/compiler@..+packages+compiler)(@typespec/http@..+packages+http)(@typespec/rest@..+packages+rest)(@typespec/versioning@..+packages+versioning)
       '@emotion/react':
         specifier: ^11.11.1
         version: 11.11.1(@types/react@18.2.9)(react@18.2.0)
@@ -783,6 +789,9 @@ importers:
       '@fluentui/react-icons':
         specifier: ~2.0.190
         version: 2.0.190(react@18.2.0)
+      '@qiaozha/typespec-ts':
+        specifier: /Users/zhangqiaoqiao/work/code/autorest.typescript/packages/typespec-ts/qiaozha-typespec-ts-0.16.2.tgz
+        version: file:../../../autorest.typescript/packages/typespec-ts/qiaozha-typespec-ts-0.16.2.tgz(@azure-tools/typespec-azure-core@0.33.1)(@azure-tools/typespec-client-generator-core@0.33.0)(@typespec/compiler@..+packages+compiler)(@typespec/http@..+packages+http)(@typespec/rest@..+packages+rest)(@typespec/versioning@..+packages+versioning)
       '@typespec/compiler':
         specifier: workspace:~0.47.1
         version: link:../compiler
@@ -907,9 +916,18 @@ importers:
 
   ../../packages/playground-website:
     dependencies:
+      '@azure-tools/typespec-azure-core':
+        specifier: '>=0.33.0 <1.0.0'
+        version: 0.33.1(@typespec/compiler@..+packages+compiler)(@typespec/http@..+packages+http)(@typespec/rest@..+packages+rest)
+      '@azure-tools/typespec-client-generator-core':
+        specifier: '>=0.33.0 <1.0.0'
+        version: 0.33.0(@typespec/compiler@..+packages+compiler)(@typespec/http@..+packages+http)(@typespec/rest@..+packages+rest)(@typespec/versioning@..+packages+versioning)
       '@emotion/react':
         specifier: ^11.11.1
         version: 11.11.1(@types/react@18.2.9)(react@18.2.0)
+      '@qiaozha/typespec-ts':
+        specifier: /Users/zhangqiaoqiao/work/code/autorest.typescript/packages/typespec-ts/qiaozha-typespec-ts-0.16.2.tgz
+        version: file:../../../autorest.typescript/packages/typespec-ts/qiaozha-typespec-ts-0.16.2.tgz(@azure-tools/typespec-azure-core@0.33.1)(@azure-tools/typespec-client-generator-core@0.33.0)(@typespec/compiler@..+packages+compiler)(@typespec/http@..+packages+http)(@typespec/rest@..+packages+rest)(@typespec/versioning@..+packages+versioning)
       '@typespec/compiler':
         specifier: workspace:~0.47.1
         version: link:../compiler
@@ -1657,6 +1675,36 @@ packages:
     dependencies:
       '@jridgewell/gen-mapping': 0.3.3
       '@jridgewell/trace-mapping': 0.3.18
+
+  /@azure-tools/typespec-azure-core@0.33.1(@typespec/compiler@..+packages+compiler)(@typespec/http@..+packages+http)(@typespec/rest@..+packages+rest):
+    resolution: {integrity: sha512-g2MbyofjGo5GrPu/L0D3dXRcYXJOIA+abLWS6CRwwGN0RT0W+tnV8SFvGWRbBFsU0gWEZapfJKBwpVVwau6pVQ==}
+    engines: {node: '>=16.0.0'}
+    peerDependencies:
+      '@typespec/compiler': ~0.47.0
+      '@typespec/http': ~0.47.0
+      '@typespec/rest': ~0.47.0
+    dependencies:
+      '@typespec/compiler': link:../../packages/compiler
+      '@typespec/http': link:../../packages/http
+      '@typespec/lint': 0.47.0(@typespec/compiler@..+packages+compiler)
+      '@typespec/rest': link:../../packages/rest
+    dev: false
+
+  /@azure-tools/typespec-client-generator-core@0.33.0(@typespec/compiler@..+packages+compiler)(@typespec/http@..+packages+http)(@typespec/rest@..+packages+rest)(@typespec/versioning@..+packages+versioning):
+    resolution: {integrity: sha512-Cm6hxL7oEUfK5pyPHM0gbtlLVPQSE3qJbSVQDiTqGJaU/660GSLEjp9i+NfZ1nl+cDUBCaCKaFqongin+sbKuw==}
+    engines: {node: '>=16.0.0'}
+    peerDependencies:
+      '@typespec/compiler': ~0.47.0
+      '@typespec/http': ~0.47.0
+      '@typespec/rest': ~0.47.0
+      '@typespec/versioning': ~0.47.0
+    dependencies:
+      '@typespec/compiler': link:../../packages/compiler
+      '@typespec/http': link:../../packages/http
+      '@typespec/lint': 0.47.0(@typespec/compiler@..+packages+compiler)
+      '@typespec/rest': link:../../packages/rest
+      '@typespec/versioning': link:../../packages/versioning
+    dev: false
 
   /@babel/code-frame@7.12.11:
     resolution: {integrity: sha512-Zt1yodBx1UcyiePMSkWnU4hPqhwq7hGi2nFL1LeA3EUl+q2LQx16MISgJ0+z7dnmgvP9QtIleuETGOiOH1RcIw==}
@@ -5984,6 +6032,14 @@ packages:
     resolution: {integrity: sha512-a5Sab1C4/icpTZVzZc5Ghpz88yQtGOyNqYXcZgOssB2uuAr+wF/MvN6bgtW32q7HHrvBki+BsZ0OuNv6EV3K9g==}
     dev: false
 
+  /@qiaozha/rlc-common@0.16.1:
+    resolution: {integrity: sha512-0Qjw2zngf5TY4lvweO80lYXgnHDc+DTtFHOvKYFZogp3+UTeoJeDWGFcPd7U9Atb8bnLeegEBSKzfoGqBfYWeA==}
+    dependencies:
+      handlebars: 4.7.8
+      lodash: 4.17.21
+      ts-morph: 15.1.0
+    dev: false
+
   /@rollup/plugin-alias@5.0.0(rollup@3.24.0):
     resolution: {integrity: sha512-l9hY5chSCjuFRPsnRm16twWBiSApl2uYFLsepQYwtBuAxNMQ/1dJqADld40P0Jkqm65GRTLy/AC6hnpVebtLsA==}
     engines: {node: '>=14.0.0'}
@@ -6334,6 +6390,15 @@ packages:
   /@trysound/sax@0.2.0:
     resolution: {integrity: sha512-L7z9BgrNEcYyUYtF+HaEfiS5ebkh9jXqbszz7pC0hRBPaatV0XjSD3+eHrpqFemQfgwiFF0QPIarnIihIDn7OA==}
     engines: {node: '>=10.13.0'}
+    dev: false
+
+  /@ts-morph/common@0.16.0:
+    resolution: {integrity: sha512-SgJpzkTgZKLKqQniCjLaE3c2L2sdL7UShvmTmPBejAKd2OKV/yfMpQ2IWpAuA+VY5wy7PkSUaEObIqEK6afFuw==}
+    dependencies:
+      fast-glob: 3.3.1
+      minimatch: 5.1.6
+      mkdirp: 1.0.4
+      path-browserify: 1.0.1
     dev: false
 
   /@tsconfig/docusaurus@1.0.5:
@@ -6889,6 +6954,15 @@ packages:
       vscode-languageserver: 8.0.2
       vscode-languageserver-textdocument: 1.0.8
       yargs: 17.6.2
+    dev: false
+
+  /@typespec/lint@0.47.0(@typespec/compiler@..+packages+compiler):
+    resolution: {integrity: sha512-+CZ8OC8ABHU+HljjWvkVfLDZzyj2kc8VqEOHoXYdomt7PTo2GdVubyOXZMAYFiXWJr/k4YWHD2moPcvu+e2yTQ==}
+    engines: {node: '>=16.0.0'}
+    peerDependencies:
+      '@typespec/compiler': ~0.47.0
+    dependencies:
+      '@typespec/compiler': link:../../packages/compiler
     dev: false
 
   /@vitejs/plugin-react@4.0.0(vite@4.2.1):
@@ -7885,6 +7959,10 @@ packages:
   /clsx@1.2.1:
     resolution: {integrity: sha512-EcR6r5a8bj6pu3ycsa/E/cKVGuTgZJZdsyUYHOksG/UHIiKfjxzRxYJpyVBwYaQeOvghal9fcc4PidlgzugAQg==}
     engines: {node: '>=6'}
+    dev: false
+
+  /code-block-writer@11.0.3:
+    resolution: {integrity: sha512-NiujjUFB4SwScJq2bwbYUtXbZhBSlY6vYzm++3Q6oC+U+injTqfPYFK8wS9COOmb2lueqp0ZRB4nK1VYeHgNyw==}
     dev: false
 
   /collapse-white-space@1.0.6:
@@ -10090,6 +10168,15 @@ packages:
       universalify: 2.0.0
     dev: false
 
+  /fs-extra@11.1.1:
+    resolution: {integrity: sha512-MGIE4HOvQCeUCzmlHs0vXpih4ysz4wg9qiSAu6cd42lVwPbTM1TjV7RusoyQqMmk/95gdQZX72u+YW+c3eEpFQ==}
+    engines: {node: '>=14.14'}
+    dependencies:
+      graceful-fs: 4.2.11
+      jsonfile: 6.1.0
+      universalify: 2.0.0
+    dev: false
+
   /fs-extra@9.1.0:
     resolution: {integrity: sha512-hcg3ZmepS30/7BSFqRvoo3DOMQu7IjqxO5nCDt+zM9XWjb33Wg7ziNT+Qvqbuc3+gWpzO02JubVyk2G4Zvo1OQ==}
     engines: {node: '>=10'}
@@ -10349,6 +10436,19 @@ packages:
 
   /handle-thing@2.0.1:
     resolution: {integrity: sha512-9Qn4yBxelxoh2Ow62nP+Ka/kMnOXRi8BXnRaUwezLNhqelnN49xKz4F/dPP8OYLxLxq6JDtZb2i9XznUQbNPTg==}
+    dev: false
+
+  /handlebars@4.7.8:
+    resolution: {integrity: sha512-vafaFqs8MZkRrSX7sFVUdo3ap/eNiLnb4IakshzvP56X5Nr1iGKAIqdX6tMlm6HcNRIkr6AxO5jFEoJzzpT8aQ==}
+    engines: {node: '>=0.4.7'}
+    hasBin: true
+    dependencies:
+      minimist: 1.2.8
+      neo-async: 2.6.2
+      source-map: 0.6.1
+      wordwrap: 1.0.0
+    optionalDependencies:
+      uglify-js: 3.17.4
     dev: false
 
   /has-flag@3.0.0:
@@ -12232,6 +12332,10 @@ packages:
       slash: 2.0.0
       tmp: 0.0.33
       yaml: 1.10.2
+    dev: false
+
+  /path-browserify@1.0.1:
+    resolution: {integrity: sha512-b7uo2UCUOYZcnF/3ID0lulOJi/bafxa1xPe7ZPsammBSpjSWQkjNxlt635YGS2MiR9GjvuXCtz2emr3jbsz98g==}
     dev: false
 
   /path-case@3.0.4:
@@ -14756,6 +14860,13 @@ packages:
     dependencies:
       typescript: 5.1.3
 
+  /ts-morph@15.1.0:
+    resolution: {integrity: sha512-RBsGE2sDzUXFTnv8Ba22QfeuKbgvAGJFuTN7HfmIRUkgT/NaVLfDM/8OFm2NlFkGlWEXdpW5OaFIp1jvqdDuOg==}
+    dependencies:
+      '@ts-morph/common': 0.16.0
+      code-block-writer: 11.0.3
+    dev: false
+
   /tslib@1.14.1:
     resolution: {integrity: sha512-Xni35NKzjgMrwevysHTCArtLDpPvye8zV/0E4EyYn43P7/7qvQwPh9BGkHewbMulVntbigmcT7rdX3BNo9wRJg==}
     dev: false
@@ -14891,6 +15002,14 @@ packages:
   /uc.micro@1.0.6:
     resolution: {integrity: sha512-8Y75pvTYkLJW2hWQHXxoqRgV7qb9B+9vFEtidML+7koHUFapnVJAZ6cKs+Qjz5Aw3aZWHMC6u0wJE3At+nSGwA==}
     dev: true
+
+  /uglify-js@3.17.4:
+    resolution: {integrity: sha512-T9q82TJI9e/C1TAxYvfb16xO120tMVFZrGA3f9/P4424DNu6ypK103y0GPFVa17yotwSyZW5iYXgjYHkGrJW/g==}
+    engines: {node: '>=0.8.0'}
+    hasBin: true
+    requiresBuild: true
+    dev: false
+    optional: true
 
   /underscore@1.13.6:
     resolution: {integrity: sha512-+A5Sja4HP1M08MaXya7p5LvjuM7K6q/2EaC0+iovj/wOcMsTzMvDFbasi/oSapiwOlt252IqsKqPjCl7huKS0A==}
@@ -15651,6 +15770,10 @@ packages:
     resolution: {integrity: sha512-Hz/mrNwitNRh/HUAtM/VT/5VH+ygD6DV7mYKZAtHOrbs8U7lvPS6xf7EJKMF0uW1KJCl0H701g3ZGus+muE5vQ==}
     engines: {node: '>=0.10.0'}
 
+  /wordwrap@1.0.0:
+    resolution: {integrity: sha512-gvVzJFlPycKc5dZN4yPkP8w7Dc37BtP1yczEneOb4uq34pXZcvrtRTmWV8W+Ume+XCxKgbjM+nevkyFPMybd4Q==}
+    dev: false
+
   /wordwrapjs@4.0.1:
     resolution: {integrity: sha512-kKlNACbvHrkpIw6oPeYDSmdCTu2hdMHoyXLTcUKala++lx5Y+wjJ/e474Jqv5abnVmwxw08DiTuHmw69lJGksA==}
     engines: {node: '>=8.0.0'}
@@ -15886,4 +16009,30 @@ packages:
 
   /zwitch@1.0.5:
     resolution: {integrity: sha512-V50KMwwzqJV0NpZIZFwfOD5/lyny3WlSzRiXgA0G7VUnRlqttta1L6UQIHzd6EuBY/cHGfwTIck7w1yH6Q5zUw==}
+    dev: false
+
+  file:../../../autorest.typescript/packages/typespec-ts/qiaozha-typespec-ts-0.16.2.tgz(@azure-tools/typespec-azure-core@0.33.1)(@azure-tools/typespec-client-generator-core@0.33.0)(@typespec/compiler@..+packages+compiler)(@typespec/http@..+packages+http)(@typespec/rest@..+packages+rest)(@typespec/versioning@..+packages+versioning):
+    resolution: {integrity: sha512-4DhUcjfmVUX8z8ZoIGNM+bLI6y0d10I9+PRip7x1OJqGDm8t4anesW/Hyl/VpOGZssmwG+Q+3quk9zzDCrfyww==, tarball: file:../../../autorest.typescript/packages/typespec-ts/qiaozha-typespec-ts-0.16.2.tgz}
+    id: file:../../../autorest.typescript/packages/typespec-ts/qiaozha-typespec-ts-0.16.2.tgz
+    name: '@qiaozha/typespec-ts'
+    version: 0.16.2
+    peerDependencies:
+      '@azure-tools/typespec-azure-core': '>=0.33.0 <1.0.0'
+      '@azure-tools/typespec-client-generator-core': '>=0.33.0 <1.0.0'
+      '@typespec/compiler': '>=0.47.0 <1.0.0'
+      '@typespec/http': '>=0.47.0 <1.0.0'
+      '@typespec/rest': '>=0.47.0 <1.0.0'
+      '@typespec/versioning': '>=0.47.0 <1.0.0'
+    dependencies:
+      '@azure-tools/typespec-azure-core': 0.33.1(@typespec/compiler@..+packages+compiler)(@typespec/http@..+packages+http)(@typespec/rest@..+packages+rest)
+      '@azure-tools/typespec-client-generator-core': 0.33.0(@typespec/compiler@..+packages+compiler)(@typespec/http@..+packages+http)(@typespec/rest@..+packages+rest)(@typespec/versioning@..+packages+versioning)
+      '@qiaozha/rlc-common': 0.16.1
+      '@typespec/compiler': link:../../packages/compiler
+      '@typespec/http': link:../../packages/http
+      '@typespec/rest': link:../../packages/rest
+      '@typespec/versioning': link:../../packages/versioning
+      fs-extra: 11.1.1
+      prettier: 2.8.7
+      ts-morph: 15.1.0
+      tslib: 2.6.1
     dev: false

@@ -10,6 +10,7 @@ export function definePlaygroundViteConfig(config: PlaygroundUserConfig): UserCo
       target: "esnext",
       chunkSizeWarningLimit: 3000,
       rollupOptions: {
+        external: ["fs", "path"],
         output: {
           manualChunks(id) {
             if (id.includes("/node_modules/monaco-editor/esm/vs/editor")) {
@@ -21,7 +22,7 @@ export function definePlaygroundViteConfig(config: PlaygroundUserConfig): UserCo
       },
     },
     esbuild: {
-      logOverride: { "this-is-undefined-in-esm": "silent" },
+      logOverride: { "this-is-undefined-in-esm": "info" },
     },
     assetsInclude: [/\.tsp$/],
     optimizeDeps: {

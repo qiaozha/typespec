@@ -12,6 +12,7 @@ const config = definePlaygroundViteConfig({
     "@typespec/openapi3",
     "@typespec/json-schema",
     "@typespec/protobuf",
+    "@qiaozha/typespec-ts",
   ],
   samples: {
     "API versioning": {
