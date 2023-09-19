@@ -158,8 +158,8 @@
       "type": "pwa-chrome",
       "request": "launch",
       "name": "Launch Chrome against localhost",
-      "url": "http://localhost:4173",
-      "webRoot": "${workspaceFolder}/packages/playground-website"
+      "url": "http://localhost:4174",
+      "webRoot": "${workspaceFolder}/packages/playground-website/src"
     }
   ],
   "compounds": [

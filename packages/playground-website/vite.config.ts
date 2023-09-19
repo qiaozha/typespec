@@ -13,6 +13,8 @@ const config = definePlaygroundViteConfig({
     "@typespec/json-schema",
     "@typespec/protobuf",
     "@qiaozha/typespec-ts",
+    "@azure-tools/typespec-azure-core",
+    "@azure-tools/typespec-client-generator-core",
   ],
   samples: {
     "API versioning": {

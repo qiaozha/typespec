@@ -775,11 +775,11 @@ importers:
   ../../packages/playground:
     dependencies:
       '@azure-tools/typespec-azure-core':
-        specifier: '>=0.33.0 <1.0.0'
-        version: 0.33.1(@typespec/compiler@..+packages+compiler)(@typespec/http@..+packages+http)(@typespec/rest@..+packages+rest)
+        specifier: '>=0.34.0 <1.0.0'
+        version: 0.34.0(@typespec/compiler@..+packages+compiler)(@typespec/http@..+packages+http)(@typespec/rest@..+packages+rest)
       '@azure-tools/typespec-client-generator-core':
-        specifier: '>=0.33.0 <1.0.0'
-        version: 0.33.0(@typespec/compiler@..+packages+compiler)(@typespec/http@..+packages+http)(@typespec/rest@..+packages+rest)(@typespec/versioning@..+packages+versioning)
+        specifier: '>=0.34.0 <1.0.0'
+        version: 0.34.0(@typespec/compiler@..+packages+compiler)(@typespec/http@..+packages+http)(@typespec/rest@..+packages+rest)(@typespec/versioning@..+packages+versioning)
       '@emotion/react':
         specifier: ^11.11.1
         version: 11.11.1(@types/react@18.2.9)(react@18.2.0)
@@ -790,8 +790,8 @@ importers:
         specifier: ~2.0.190
         version: 2.0.190(react@18.2.0)
       '@qiaozha/typespec-ts':
-        specifier: 0.16.3
-        version: 0.16.3(@azure-tools/typespec-azure-core@0.33.1)(@azure-tools/typespec-client-generator-core@0.33.0)(@typespec/compiler@..+packages+compiler)(@typespec/http@..+packages+http)(@typespec/rest@..+packages+rest)(@typespec/versioning@..+packages+versioning)
+        specifier: /Users/zhangqiaoqiao/work/code/autorest.typescript/packages/typespec-ts/qiaozha-typespec-ts-0.16.4.tgz
+        version: file:../../../autorest.typescript/packages/typespec-ts/qiaozha-typespec-ts-0.16.4.tgz(@azure-tools/typespec-azure-core@0.34.0)(@azure-tools/typespec-client-generator-core@0.34.0)(@typespec/compiler@..+packages+compiler)(@typespec/http@..+packages+http)(@typespec/rest@..+packages+rest)(@typespec/versioning@..+packages+versioning)
       '@typespec/compiler':
         specifier: workspace:~0.47.1
         version: link:../compiler
@@ -917,17 +917,17 @@ importers:
   ../../packages/playground-website:
     dependencies:
       '@azure-tools/typespec-azure-core':
-        specifier: '>=0.33.0 <1.0.0'
-        version: 0.33.1(@typespec/compiler@..+packages+compiler)(@typespec/http@..+packages+http)(@typespec/rest@..+packages+rest)
+        specifier: '>=0.34.0 <1.0.0'
+        version: 0.34.0(@typespec/compiler@..+packages+compiler)(@typespec/http@..+packages+http)(@typespec/rest@..+packages+rest)
       '@azure-tools/typespec-client-generator-core':
-        specifier: '>=0.33.0 <1.0.0'
-        version: 0.33.0(@typespec/compiler@..+packages+compiler)(@typespec/http@..+packages+http)(@typespec/rest@..+packages+rest)(@typespec/versioning@..+packages+versioning)
+        specifier: '>=0.34.0 <1.0.0'
+        version: 0.34.0(@typespec/compiler@..+packages+compiler)(@typespec/http@..+packages+http)(@typespec/rest@..+packages+rest)(@typespec/versioning@..+packages+versioning)
       '@emotion/react':
         specifier: ^11.11.1
         version: 11.11.1(@types/react@18.2.9)(react@18.2.0)
       '@qiaozha/typespec-ts':
-        specifier: 0.16.3
-        version: 0.16.3(@azure-tools/typespec-azure-core@0.33.1)(@azure-tools/typespec-client-generator-core@0.33.0)(@typespec/compiler@..+packages+compiler)(@typespec/http@..+packages+http)(@typespec/rest@..+packages+rest)(@typespec/versioning@..+packages+versioning)
+        specifier: /Users/zhangqiaoqiao/work/code/autorest.typescript/packages/typespec-ts/qiaozha-typespec-ts-0.16.4.tgz
+        version: file:../../../autorest.typescript/packages/typespec-ts/qiaozha-typespec-ts-0.16.4.tgz(@azure-tools/typespec-azure-core@0.34.0)(@azure-tools/typespec-client-generator-core@0.34.0)(@typespec/compiler@..+packages+compiler)(@typespec/http@..+packages+http)(@typespec/rest@..+packages+rest)(@typespec/versioning@..+packages+versioning)
       '@typespec/compiler':
         specifier: workspace:~0.47.1
         version: link:../compiler
@@ -1676,32 +1676,31 @@ packages:
       '@jridgewell/gen-mapping': 0.3.3
       '@jridgewell/trace-mapping': 0.3.18
 
-  /@azure-tools/typespec-azure-core@0.33.1(@typespec/compiler@..+packages+compiler)(@typespec/http@..+packages+http)(@typespec/rest@..+packages+rest):
-    resolution: {integrity: sha512-g2MbyofjGo5GrPu/L0D3dXRcYXJOIA+abLWS6CRwwGN0RT0W+tnV8SFvGWRbBFsU0gWEZapfJKBwpVVwau6pVQ==}
+  /@azure-tools/typespec-azure-core@0.34.0(@typespec/compiler@..+packages+compiler)(@typespec/http@..+packages+http)(@typespec/rest@..+packages+rest):
+    resolution: {integrity: sha512-n3WrIx8bAHsknYXivbhl8WO+uzdB6RZMtx27/vnD+Jpo2krxLm0mMJK6pz2m/npTV4qlbY05OIeokhWQrneypw==}
     engines: {node: '>=16.0.0'}
     peerDependencies:
-      '@typespec/compiler': ~0.47.0
-      '@typespec/http': ~0.47.0
-      '@typespec/rest': ~0.47.0
+      '@typespec/compiler': ~0.48.0
+      '@typespec/http': ~0.48.0
+      '@typespec/rest': ~0.48.0
     dependencies:
       '@typespec/compiler': link:../../packages/compiler
       '@typespec/http': link:../../packages/http
-      '@typespec/lint': 0.47.0(@typespec/compiler@..+packages+compiler)
       '@typespec/rest': link:../../packages/rest
     dev: false
 
-  /@azure-tools/typespec-client-generator-core@0.33.0(@typespec/compiler@..+packages+compiler)(@typespec/http@..+packages+http)(@typespec/rest@..+packages+rest)(@typespec/versioning@..+packages+versioning):
-    resolution: {integrity: sha512-Cm6hxL7oEUfK5pyPHM0gbtlLVPQSE3qJbSVQDiTqGJaU/660GSLEjp9i+NfZ1nl+cDUBCaCKaFqongin+sbKuw==}
+  /@azure-tools/typespec-client-generator-core@0.34.0(@typespec/compiler@..+packages+compiler)(@typespec/http@..+packages+http)(@typespec/rest@..+packages+rest)(@typespec/versioning@..+packages+versioning):
+    resolution: {integrity: sha512-FG+Ja6gEnjLjpwh/L7QzQATF6DFSm1XBzBX2AbpmsPoAC93HIj+9IBjEUc4+4l+APCwia1Ukj5mTUKS2CEbuYg==}
     engines: {node: '>=16.0.0'}
     peerDependencies:
-      '@typespec/compiler': ~0.47.0
-      '@typespec/http': ~0.47.0
-      '@typespec/rest': ~0.47.0
-      '@typespec/versioning': ~0.47.0
+      '@typespec/compiler': ~0.48.0
+      '@typespec/http': ~0.48.0
+      '@typespec/rest': ~0.48.0
+      '@typespec/versioning': ~0.48.0
     dependencies:
       '@typespec/compiler': link:../../packages/compiler
       '@typespec/http': link:../../packages/http
-      '@typespec/lint': 0.47.0(@typespec/compiler@..+packages+compiler)
+      '@typespec/lint': 0.48.0(@typespec/compiler@..+packages+compiler)
       '@typespec/rest': link:../../packages/rest
       '@typespec/versioning': link:../../packages/versioning
     dev: false
@@ -6040,29 +6039,6 @@ packages:
       ts-morph: 15.1.0
     dev: false
 
-  /@qiaozha/typespec-ts@0.16.3(@azure-tools/typespec-azure-core@0.33.1)(@azure-tools/typespec-client-generator-core@0.33.0)(@typespec/compiler@..+packages+compiler)(@typespec/http@..+packages+http)(@typespec/rest@..+packages+rest)(@typespec/versioning@..+packages+versioning):
-    resolution: {integrity: sha512-f70YxKWawxeBalCnF+YzN+GgELb7HwJNVaWe1VPdih7qF/JZYtD4PBAFzq+9A7SWhcUYezs5s5bquNzjkaSV3g==}
-    peerDependencies:
-      '@azure-tools/typespec-azure-core': '>=0.33.0 <1.0.0'
-      '@azure-tools/typespec-client-generator-core': '>=0.33.0 <1.0.0'
-      '@typespec/compiler': '>=0.47.0 <1.0.0'
-      '@typespec/http': '>=0.47.0 <1.0.0'
-      '@typespec/rest': '>=0.47.0 <1.0.0'
-      '@typespec/versioning': '>=0.47.0 <1.0.0'
-    dependencies:
-      '@azure-tools/typespec-azure-core': 0.33.1(@typespec/compiler@..+packages+compiler)(@typespec/http@..+packages+http)(@typespec/rest@..+packages+rest)
-      '@azure-tools/typespec-client-generator-core': 0.33.0(@typespec/compiler@..+packages+compiler)(@typespec/http@..+packages+http)(@typespec/rest@..+packages+rest)(@typespec/versioning@..+packages+versioning)
-      '@qiaozha/rlc-common': 0.16.1
-      '@typespec/compiler': link:../../packages/compiler
-      '@typespec/http': link:../../packages/http
-      '@typespec/rest': link:../../packages/rest
-      '@typespec/versioning': link:../../packages/versioning
-      fs-extra: 11.1.1
-      prettier: 2.8.7
-      ts-morph: 15.1.0
-      tslib: 2.6.1
-    dev: false
-
   /@rollup/plugin-alias@5.0.0(rollup@3.24.0):
     resolution: {integrity: sha512-l9hY5chSCjuFRPsnRm16twWBiSApl2uYFLsepQYwtBuAxNMQ/1dJqADld40P0Jkqm65GRTLy/AC6hnpVebtLsA==}
     engines: {node: '>=14.0.0'}
@@ -6979,11 +6955,11 @@ packages:
       yargs: 17.6.2
     dev: false
 
-  /@typespec/lint@0.47.0(@typespec/compiler@..+packages+compiler):
-    resolution: {integrity: sha512-+CZ8OC8ABHU+HljjWvkVfLDZzyj2kc8VqEOHoXYdomt7PTo2GdVubyOXZMAYFiXWJr/k4YWHD2moPcvu+e2yTQ==}
+  /@typespec/lint@0.48.0(@typespec/compiler@..+packages+compiler):
+    resolution: {integrity: sha512-hu08yLr8ORbdljqU+qf25+EqVQBDonpFiAWU9qaJ/2yTnKfdkXRbGSRuBYC17oMvJesLzyxVRwarpWPdBIMycw==}
     engines: {node: '>=16.0.0'}
     peerDependencies:
-      '@typespec/compiler': ~0.47.0
+      '@typespec/compiler': ~0.48.0
     dependencies:
       '@typespec/compiler': link:../../packages/compiler
     dev: false
@@ -10185,15 +10161,6 @@ packages:
   /fs-extra@10.1.0:
     resolution: {integrity: sha512-oRXApq54ETRj4eMiFzGnHWGy+zo5raudjuxN0b8H7s/RU2oW0Wvsx9O0ACRN/kRq9E8Vu/ReskGB5o3ji+FzHQ==}
     engines: {node: '>=12'}
-    dependencies:
-      graceful-fs: 4.2.11
-      jsonfile: 6.1.0
-      universalify: 2.0.0
-    dev: false
-
-  /fs-extra@11.1.1:
-    resolution: {integrity: sha512-MGIE4HOvQCeUCzmlHs0vXpih4ysz4wg9qiSAu6cd42lVwPbTM1TjV7RusoyQqMmk/95gdQZX72u+YW+c3eEpFQ==}
-    engines: {node: '>=14.14'}
     dependencies:
       graceful-fs: 4.2.11
       jsonfile: 6.1.0
@@ -16032,4 +15999,29 @@ packages:
 
   /zwitch@1.0.5:
     resolution: {integrity: sha512-V50KMwwzqJV0NpZIZFwfOD5/lyny3WlSzRiXgA0G7VUnRlqttta1L6UQIHzd6EuBY/cHGfwTIck7w1yH6Q5zUw==}
+    dev: false
+
+  file:../../../autorest.typescript/packages/typespec-ts/qiaozha-typespec-ts-0.16.4.tgz(@azure-tools/typespec-azure-core@0.34.0)(@azure-tools/typespec-client-generator-core@0.34.0)(@typespec/compiler@..+packages+compiler)(@typespec/http@..+packages+http)(@typespec/rest@..+packages+rest)(@typespec/versioning@..+packages+versioning):
+    resolution: {integrity: sha512-S4gGnT+7Y2b1pbnwwudtSDeU3Lz26awzsORUu1kUiluq6etqbk/6byV51IEccLuu5s2CKakKoCvNrsxzudD33Q==, tarball: file:../../../autorest.typescript/packages/typespec-ts/qiaozha-typespec-ts-0.16.4.tgz}
+    id: file:../../../autorest.typescript/packages/typespec-ts/qiaozha-typespec-ts-0.16.4.tgz
+    name: '@qiaozha/typespec-ts'
+    version: 0.16.4
+    peerDependencies:
+      '@azure-tools/typespec-azure-core': '>=0.33.0 <1.0.0'
+      '@azure-tools/typespec-client-generator-core': '>=0.33.0 <1.0.0'
+      '@typespec/compiler': '>=0.47.0 <1.0.0'
+      '@typespec/http': '>=0.47.0 <1.0.0'
+      '@typespec/rest': '>=0.47.0 <1.0.0'
+      '@typespec/versioning': '>=0.47.0 <1.0.0'
+    dependencies:
+      '@azure-tools/typespec-azure-core': 0.34.0(@typespec/compiler@..+packages+compiler)(@typespec/http@..+packages+http)(@typespec/rest@..+packages+rest)
+      '@azure-tools/typespec-client-generator-core': 0.34.0(@typespec/compiler@..+packages+compiler)(@typespec/http@..+packages+http)(@typespec/rest@..+packages+rest)(@typespec/versioning@..+packages+versioning)
+      '@qiaozha/rlc-common': 0.16.1
+      '@typespec/compiler': link:../../packages/compiler
+      '@typespec/http': link:../../packages/http
+      '@typespec/rest': link:../../packages/rest
+      '@typespec/versioning': link:../../packages/versioning
+      prettier: 2.8.7
+      ts-morph: 15.1.0
+      tslib: 2.6.1
     dev: false
