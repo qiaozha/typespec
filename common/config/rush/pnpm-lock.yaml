@@ -775,7 +775,7 @@ importers:
   ../../packages/playground:
     dependencies:
       '@azure-tools/typespec-azure-core':
-        specifier: '>=0.34.0 <1.0.0'
+        specifier: latest
         version: 0.34.0(@typespec/compiler@..+packages+compiler)(@typespec/http@..+packages+http)(@typespec/rest@..+packages+rest)
       '@azure-tools/typespec-client-generator-core':
         specifier: '>=0.34.0 <1.0.0'
@@ -790,8 +790,8 @@ importers:
         specifier: ~2.0.190
         version: 2.0.190(react@18.2.0)
       '@qiaozha/typespec-ts':
-        specifier: /Users/zhangqiaoqiao/work/code/autorest.typescript/packages/typespec-ts/qiaozha-typespec-ts-0.16.4.tgz
-        version: file:../../../autorest.typescript/packages/typespec-ts/qiaozha-typespec-ts-0.16.4.tgz(@azure-tools/typespec-azure-core@0.34.0)(@azure-tools/typespec-client-generator-core@0.34.0)(@typespec/compiler@..+packages+compiler)(@typespec/http@..+packages+http)(@typespec/rest@..+packages+rest)(@typespec/versioning@..+packages+versioning)
+        specifier: 0.16.4
+        version: 0.16.4(@azure-tools/typespec-azure-core@0.34.0)(@azure-tools/typespec-client-generator-core@0.34.0)(@typespec/compiler@..+packages+compiler)(@typespec/http@..+packages+http)(@typespec/rest@..+packages+rest)(@typespec/versioning@..+packages+versioning)
       '@typespec/compiler':
         specifier: workspace:~0.47.1
         version: link:../compiler
@@ -917,7 +917,7 @@ importers:
   ../../packages/playground-website:
     dependencies:
       '@azure-tools/typespec-azure-core':
-        specifier: '>=0.34.0 <1.0.0'
+        specifier: latest
         version: 0.34.0(@typespec/compiler@..+packages+compiler)(@typespec/http@..+packages+http)(@typespec/rest@..+packages+rest)
       '@azure-tools/typespec-client-generator-core':
         specifier: '>=0.34.0 <1.0.0'
@@ -926,8 +926,8 @@ importers:
         specifier: ^11.11.1
         version: 11.11.1(@types/react@18.2.9)(react@18.2.0)
       '@qiaozha/typespec-ts':
-        specifier: /Users/zhangqiaoqiao/work/code/autorest.typescript/packages/typespec-ts/qiaozha-typespec-ts-0.16.4.tgz
-        version: file:../../../autorest.typescript/packages/typespec-ts/qiaozha-typespec-ts-0.16.4.tgz(@azure-tools/typespec-azure-core@0.34.0)(@azure-tools/typespec-client-generator-core@0.34.0)(@typespec/compiler@..+packages+compiler)(@typespec/http@..+packages+http)(@typespec/rest@..+packages+rest)(@typespec/versioning@..+packages+versioning)
+        specifier: 0.16.4
+        version: 0.16.4(@azure-tools/typespec-azure-core@0.34.0)(@azure-tools/typespec-client-generator-core@0.34.0)(@typespec/compiler@..+packages+compiler)(@typespec/http@..+packages+http)(@typespec/rest@..+packages+rest)(@typespec/versioning@..+packages+versioning)
       '@typespec/compiler':
         specifier: workspace:~0.47.1
         version: link:../compiler
@@ -6037,6 +6037,28 @@ packages:
       handlebars: 4.7.8
       lodash: 4.17.21
       ts-morph: 15.1.0
+    dev: false
+
+  /@qiaozha/typespec-ts@0.16.4(@azure-tools/typespec-azure-core@0.34.0)(@azure-tools/typespec-client-generator-core@0.34.0)(@typespec/compiler@..+packages+compiler)(@typespec/http@..+packages+http)(@typespec/rest@..+packages+rest)(@typespec/versioning@..+packages+versioning):
+    resolution: {integrity: sha512-1c9pksO5yUJHdrI7XMU49ANaGxpj0al4kiHUjvWA8gq/MN8B8ZzavE9G0lQ2ZcgAiWdCpZHE0LVaLDNgpwdotQ==}
+    peerDependencies:
+      '@azure-tools/typespec-azure-core': '>=0.33.0 <1.0.0'
+      '@azure-tools/typespec-client-generator-core': '>=0.33.0 <1.0.0'
+      '@typespec/compiler': '>=0.47.0 <1.0.0'
+      '@typespec/http': '>=0.47.0 <1.0.0'
+      '@typespec/rest': '>=0.47.0 <1.0.0'
+      '@typespec/versioning': '>=0.47.0 <1.0.0'
+    dependencies:
+      '@azure-tools/typespec-azure-core': 0.34.0(@typespec/compiler@..+packages+compiler)(@typespec/http@..+packages+http)(@typespec/rest@..+packages+rest)
+      '@azure-tools/typespec-client-generator-core': 0.34.0(@typespec/compiler@..+packages+compiler)(@typespec/http@..+packages+http)(@typespec/rest@..+packages+rest)(@typespec/versioning@..+packages+versioning)
+      '@qiaozha/rlc-common': 0.16.1
+      '@typespec/compiler': link:../../packages/compiler
+      '@typespec/http': link:../../packages/http
+      '@typespec/rest': link:../../packages/rest
+      '@typespec/versioning': link:../../packages/versioning
+      prettier: 2.8.7
+      ts-morph: 15.1.0
+      tslib: 2.6.1
     dev: false
 
   /@rollup/plugin-alias@5.0.0(rollup@3.24.0):
@@ -15999,29 +16021,4 @@ packages:
 
   /zwitch@1.0.5:
     resolution: {integrity: sha512-V50KMwwzqJV0NpZIZFwfOD5/lyny3WlSzRiXgA0G7VUnRlqttta1L6UQIHzd6EuBY/cHGfwTIck7w1yH6Q5zUw==}
-    dev: false
-
-  file:../../../autorest.typescript/packages/typespec-ts/qiaozha-typespec-ts-0.16.4.tgz(@azure-tools/typespec-azure-core@0.34.0)(@azure-tools/typespec-client-generator-core@0.34.0)(@typespec/compiler@..+packages+compiler)(@typespec/http@..+packages+http)(@typespec/rest@..+packages+rest)(@typespec/versioning@..+packages+versioning):
-    resolution: {integrity: sha512-S4gGnT+7Y2b1pbnwwudtSDeU3Lz26awzsORUu1kUiluq6etqbk/6byV51IEccLuu5s2CKakKoCvNrsxzudD33Q==, tarball: file:../../../autorest.typescript/packages/typespec-ts/qiaozha-typespec-ts-0.16.4.tgz}
-    id: file:../../../autorest.typescript/packages/typespec-ts/qiaozha-typespec-ts-0.16.4.tgz
-    name: '@qiaozha/typespec-ts'
-    version: 0.16.4
-    peerDependencies:
-      '@azure-tools/typespec-azure-core': '>=0.33.0 <1.0.0'
-      '@azure-tools/typespec-client-generator-core': '>=0.33.0 <1.0.0'
-      '@typespec/compiler': '>=0.47.0 <1.0.0'
-      '@typespec/http': '>=0.47.0 <1.0.0'
-      '@typespec/rest': '>=0.47.0 <1.0.0'
-      '@typespec/versioning': '>=0.47.0 <1.0.0'
-    dependencies:
-      '@azure-tools/typespec-azure-core': 0.34.0(@typespec/compiler@..+packages+compiler)(@typespec/http@..+packages+http)(@typespec/rest@..+packages+rest)
-      '@azure-tools/typespec-client-generator-core': 0.34.0(@typespec/compiler@..+packages+compiler)(@typespec/http@..+packages+http)(@typespec/rest@..+packages+rest)(@typespec/versioning@..+packages+versioning)
-      '@qiaozha/rlc-common': 0.16.1
-      '@typespec/compiler': link:../../packages/compiler
-      '@typespec/http': link:../../packages/http
-      '@typespec/rest': link:../../packages/rest
-      '@typespec/versioning': link:../../packages/versioning
-      prettier: 2.8.7
-      ts-morph: 15.1.0
-      tslib: 2.6.1
     dev: false

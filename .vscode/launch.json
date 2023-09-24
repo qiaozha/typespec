@@ -155,11 +155,16 @@
       "skipFiles": ["<node_internals>/**/*.js"]
     },
     {
-      "type": "pwa-chrome",
+      "type": "chrome",
       "request": "launch",
-      "name": "Launch Chrome against localhost",
-      "url": "http://localhost:4174",
-      "webRoot": "${workspaceFolder}/packages/playground-website/src"
+      "name": "Debug Playground Website",
+      "url": "http://localhost:5173",
+      "webRoot": "${workspaceFolder}/packages/playground-website/src",
+      "sourceMapPathOverrides": {
+        "webpack:///./src/*": "${webRoot}/*"
+      },
+      "runtimeArgs": ["--remote-debugging-port=9222"],
+      "sourceMaps": true
     }
   ],
   "compounds": [
