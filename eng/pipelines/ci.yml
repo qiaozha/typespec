@@ -13,10 +13,14 @@ jobs:
     pool:
       name: azsdk-pool-mms-win-2022-general
       vmImage: windows-2022
+
+    variables:
+      TYPESPEC_SKIP_DOCUSAURUS_BUILD: true # Disable docusaurus build
+
     steps:
       - template: ./templates/install.yml
         parameters:
-          nodeVersion: "20.5"
+          nodeVersion: "20.x"
       - template: ./templates/build.yml
 
       - script: node common/scripts/install-run-rush.js test-official --parallelism max --verbose
@@ -48,10 +52,14 @@ jobs:
     pool:
       name: azsdk-pool-mms-win-2022-general
       vmImage: windows-2022
+
+    variables:
+      TYPESPEC_SKIP_DOCUSAURUS_BUILD: true # Disable docusaurus build
+
     steps:
       - template: ./templates/install.yml
         parameters:
-          nodeVersion: "20.5"
+          nodeVersion: "20.x"
       - template: ./templates/build.yml
 
       - script: node ./packages/internal-build-utils/cmd/cli.js bump-version-preview .
